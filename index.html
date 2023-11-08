@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Apple</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.20.0/font/bootstrap-icons.css" rel="stylesheet">
+   
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <i class="fas fa-shopping-cart"></i> Tienda Apple
+                </a>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carrito.html">
+                            <i class="fas fa-shopping-cart"></i> Carrito <span class="badge badge-danger" id="contador">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+<main class="product-flex">
+    <div class="product product-card">
+        <img src="./assets/Airpods.jpg" alt="Producto 1">
+        <h3>Airpods</h3>
+        <p>$29.99</p>
+        <button class="btn-agregar-carrito"   onclick="agregarAlCarrito('Airpods', 29.99)">Agregar al Carrito</button>   
+    </div>
+
+    <div class="product product-card">
+        <img src="./assets/Apple watch.png" alt="Producto 2">
+        <h3>Apple watch</h3>
+        <p>$19.99</p>
+        <button class="btn-agregar-carrito"  onclick="agregarAlCarrito('Apple watch', 19.99)">Agregar al Carrito</button>  
+    </div>
+
+    <div class="product product-card">
+        <img src="./assets/iphone 14 pro max.jpg" alt="Producto 3">
+        <h3>Iphone 15</h3>
+        <p>$589.99</p>
+        <button class="btn-agregar-carrito"  onclick="agregarAlCarrito('Iphone 15 pro max', 589.99)">Agregar al Carrito</button>  
+    </div>
+
+    <div class="product product-card">
+        <img src="./assets/macbook pro 16.jpg" alt="Producto 4">
+        <h3>MacBook Pro</h3>
+        <p>$29.99</p>
+        <button class="btn-agregar-carrito" onclick="agregarAlCarrito('Macbook pro 16', 59.99)">Agregar al Carrito</button> 
+    </div>
+
+</main>
+
+<footer>
+    <p>Todos Los Derechos Reservados &copy; 2023 Curso Js Coderhouse Nicolas Cambareri</p>
+</footer>
+</body>
+<script src="./main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+  
+</html>
