@@ -1,20 +1,6 @@
 
 // FUNCION AGREGAR AL CARRITO 
 // ---------------------------------------------------------------------------
-// function agregarAlCarrito(nombre, precio) {
-//     let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
-//     carrito.push({ nombre, precio });
-//     localStorage.setItem('carrito', JSON.stringify(carrito));
-
-//     Swal.fire({
-//         title: 'Producto Agregado',
-//         text: `El producto "${nombre}" se agregó al carrito`,
-//         icon: 'success',
-//         timer: 2000
-//     });
-
-//     mostrarCarrito();
-// }
 function agregarAlCarrito(nombre, precio) {
     let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
     carrito.push({ nombre, precio });
@@ -99,40 +85,7 @@ function borrarProducto(index) {
         });
     }
 }
-// function borrarProducto(index) {
-//     let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 
-//     if (carrito.length > 0) {
-//         Swal.fire({
-//             title: 'Confirmación',
-//             text: '¿Estás seguro de borrar este producto del carrito?',
-//             icon: 'warning',
-//             showCancelButton: true,
-//             confirmButtonText: 'Sí, borrar',
-//             cancelButtonText: 'Cancelar'
-//         }).then((result) => {
-//             if (result.isConfirmed) {
-//                 carrito.splice(index, 1);
-//                 localStorage.setItem('carrito', JSON.stringify(carrito));
-
-//                 Swal.fire({
-//                     title: 'Producto Borrado',
-//                     text: 'El producto se ha eliminado del carrito',
-//                     icon: 'success',
-//                     timer: 2000
-//                 });
-
-//                 mostrarCarrito();
-//             }
-//         });
-//     } else {
-//         Swal.fire({
-//             title: 'Carrito Vacío',
-//             text: 'El carrito está vacío, no se pudo borrar ningún producto.',
-//             icon: 'info'
-//         });
-//     }
-// }
 
 // FUNCION CALCULAR TOTAL
 // ---------------------------------------------------------------------------
