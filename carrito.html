@@ -1,17 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda Apple</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.20.0/font/bootstrap-icons.css" rel="stylesheet">
-   
-
 </head>
-
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark ">
@@ -24,7 +19,7 @@
                         <a class="nav-link" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
+                        <a class="nav-link" href="ingresar.html">Ingresar</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="carrito.html">
@@ -35,23 +30,25 @@
             </div>
         </nav>
     </header>
-    <main>
-        <section class="cart">
+    <main class="container mt-4 col-5">
+        <section class="cart text-center">
             <h2>Productos en el Carrito</h2>
-            <ul id="lista-carrito">
-                <!-- Los productos que agregamos aca dinamicamente con js -->
-            </ul>
-            <button onclick="completarCompra ()">Comprar</button>
+            <div class="p-5 rounded shadow">
+                <ul id="lista-carrito" class="list-group">
+                  
+                </ul>
+            </div>
+            <button class="btn btn-success btn-lg mt-5" onclick="completarCompra()">Comprar</button>
         </section>
     </main>
-    <footer>
+    <footer class="mt-2">
         <p>Todos Los Derechos Reservados &copy; 2023 Curso Js Coderhouse Nicolas Cambareri</p>
     </footer>
-</body>
-<script src="./main.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-
-  
-</html>
+    </body>
+    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    
+      
+    </html>
