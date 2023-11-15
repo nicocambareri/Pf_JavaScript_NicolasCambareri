@@ -10,7 +10,7 @@ function agregarAlCarrito(nombre, precio) {
     contador++;
     localStorage.setItem('cartCount', contador);
     
-    // Update the cart count on the page
+   
     document.getElementById('contador').textContent = contador;
 
     Swal.fire({
